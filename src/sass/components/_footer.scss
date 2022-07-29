@@ -1,0 +1,14 @@
+.footer__text {
+  @include fonts(15px, 21px, 400, 0);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background: cadetblue;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

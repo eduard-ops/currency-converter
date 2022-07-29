@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+@mixin fonts($fz, $lh, $fw: 400, $ls: 0.03em, $fm: Raleway) {
+  font-family: $fm;
+  font-size: $fz;
+  line-height: $lh/$fz;
+  font-weight: $fw;
+  letter-spacing: $ls;
+}
