@@ -1,1 +1,1 @@
-Test task "Chuck Noris Quotes", Codempire.
+Test task "Currency converter".
