@@ -41,7 +41,7 @@ const Input = styled(InputBase)(({ theme }) => ({
 const CustomSelect = styled(Select)({
   '& .MuiSelect-select': {
     padding: '11px 20px',
-    width: '30px',
+    width: '40px',
   },
   '&.MuiOutlinedInput-root': {
     marginLeft: '40px',
