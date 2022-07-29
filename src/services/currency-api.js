@@ -28,14 +28,3 @@ export function fetchCurrencyHeader() {
     requestOptions
   );
 }
-
-// export function roman(params) {
-//   return mainFetchApi(
-//     `${BAZE_URL}/exchangerates_data/latest?symbols=USD,EUR,UAH`,
-//     requestOptions
-//   );
-// }
-
-// export function fetchRandomJoke() {
-//   return mainFetchApi(`${BAZE_URL}/jokes/random`);
-// }
