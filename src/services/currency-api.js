@@ -1,15 +1,6 @@
-const BAZE_URL = 'https://api.apilayer.com';
+const BAZE_URL = 'https://openexchangerates.org';
 
-const API_KEY = 'EjSq0HOafXUWfGgQXFRoXkBxCns4FP8V';
-
-const myHeaders = new Headers();
-myHeaders.append('apikey', API_KEY);
-
-const requestOptions = {
-  method: 'GET',
-  redirect: 'follow',
-  headers: myHeaders,
-};
+const API_KEY = '5a61d0d62eda44b2901cc031b6790b55';
 
 async function mainFetchApi(url = '', config = {}) {
   const response = await fetch(url, config);
@@ -19,12 +10,11 @@ async function mainFetchApi(url = '', config = {}) {
 }
 
 export function fetchCurrency() {
-  return mainFetchApi(`${BAZE_URL}/exchangerates_data/latest`, requestOptions);
+  return mainFetchApi(`${BAZE_URL}/api/latest.json?app_id=${API_KEY}`);
 }
 
 export function fetchCurrencyHeader() {
   return mainFetchApi(
-    `${BAZE_URL}/exchangerates_data/latest?symbol=USD,EUR,UAH`,
-    requestOptions
+    `${BAZE_URL}/api/latest.json?app_id=${API_KEY}&symbol=USD,EUR,UAH`
   );
 }
